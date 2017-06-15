@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #
 # Simple Script to generate a dynamic inventory for ansible from ucsd
 # The script expects to find a vm_annotation of tpye Ansible: x1,x2,x3
