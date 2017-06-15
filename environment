@@ -1,0 +1,2 @@
+export API_KEY=####PUT IN YOUR API KEY ####
+export UCSD_SERVER=#### PUT IN YOUR UCSD IP/SERVER eg. ucsd.example.com:443
