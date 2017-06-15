@@ -75,7 +75,7 @@ def printAnsibleInventory(ucsdInventory):
             # print(getApplicationList(element))
             addElement(element, getApplicationList(element))
     for key in aliasDict:
-        ansibleDict[key] = aliasDict[key]
+        ansibleDict[key] = [aliasDict[key]]
     print(json.dumps(ansibleDict, indent=4, sort_keys=True))
     return
 
