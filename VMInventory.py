@@ -26,11 +26,11 @@ def addElement(element,appList):
     for app in appList.split(','):
         #printElement(element)
         if app in ansibleDict:
-            ansibleDict[app].append(element['VM_Name'])
+            ansibleDict[app].append(element['IP_Address']) #Aliasing seems not to work, fallback to IP or add DNS entry
             #print(ansibleDict)
         else:
             ansibleDict[app] = []
-            ansibleDict[app].append(element['VM_Name'])
+            ansibleDict[app].append(element['IP_Address']) #Aliasing seems not to work, fallback to IP or add DNS entry
             #print(ansibleDict)
     if element['VM_Name'] not in aliasDict:
         aliasDict[element['VM_Name']] = element['IP_Address']
