@@ -45,8 +45,7 @@ def printElement(element):
     return
 
 def getApplicationList(element):
-#    if (element['Custom_Attributes'].find('Ansible:') > -1) and (element['Power_State'].find('ON') > -1):
-    if (element['Custom_Attributes'].find('Ansible:') > -1):
+    if (element['Custom_Attributes'].find('Ansible:') > -1) and (element['Power_State'].find('ON') > -1):
     # Extract the Ansible: xxxxxx; part from the list of custom attributes
       start = element['Custom_Attributes'].find('Ansible:') + 8 #strip also 'Ansible:'
       end = element['Custom_Attributes'].find(';', start)
