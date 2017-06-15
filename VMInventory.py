@@ -12,7 +12,9 @@ import json
 import os
 import sys
 import argparse
-requests.packages.urllib3.disable_warnings() #dealing with self signed certificates, we do suppress this
+
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning) #dealing with self signed certificates, we do suppress this
 
 ansibleDict = {}
 aliasDict = {}
